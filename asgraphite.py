@@ -613,7 +613,8 @@ AEROSPIKE_SERVER = args.base_node
 AEROSPIKE_PORT = args.info_port
 AEROSPIKE_SERVER_ID = socket.gethostname()
 AEROSPIKE_XDR_DCS = args.dc
-GRAPHITE_PATH_PREFIX = args.graphite_prefix + AEROSPIKE_SERVER_ID
+#GRAPHITE_PATH_PREFIX = args.graphite_prefix + AEROSPIKE_SERVER_ID
+GRAPHITE_PATH_PREFIX = ''
 INTERVAL = int(args.graphite_interval)
 
 class clGraphiteDaemon(Daemon):
